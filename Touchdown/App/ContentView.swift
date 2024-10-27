@@ -11,6 +11,9 @@ struct ContentView: View {
     
     // MARK: - Properties
     
+    private var gridLayout: [GridItem] {
+        return Array(repeating: GridItem(.flexible(), spacing: 10), count: 2)
+    }
     
     // MARK: - Body
     
@@ -26,6 +29,13 @@ struct ContentView: View {
                         .padding(.vertical, 20)
                         .frame(height: 300)
                     CategoryGridView()
+                    TitleView(title: "Helmets")
+                    LazyVGrid(columns: gridLayout, spacing: 15) {
+                        ForEach(products.shuffled()) { product in
+                            ProductItemView(product: product)
+                        }
+                    }
+                    .padding()
                     FooterView()
                         .padding(.horizontal)
                 }

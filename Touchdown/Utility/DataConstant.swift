@@ -10,7 +10,9 @@ import Foundation
 enum JsonFilesEnums: String, CaseIterable {
     case players = "player.json"
     case categories = "category.json"
+    case products = "product.json"
 }
 
 let players: [PlayerCarousel] = Bundle.main.decode(JsonFilesEnums.players)
 let categories: [Category] = Bundle.main.decode(JsonFilesEnums.categories)
+let products: [Product] = Bundle.main.decode(JsonFilesEnums.products)

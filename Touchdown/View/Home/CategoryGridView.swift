@@ -12,9 +12,8 @@ struct CategoryGridView: View {
     // MARK: - Properties
     
     private let columnSpacing: CGFloat = 10
-    private let rowSpacing: CGFloat = 10
     private var gridLayout: [GridItem] {
-        return Array(repeating: GridItem(.flexible(), spacing: rowSpacing), count: 2)
+        return Array(repeating: GridItem(.flexible(), spacing: 10), count: 2)
     }
     
     var body: some View {
