@@ -18,12 +18,12 @@ struct FooterView: View {
                 .renderingMode(.template)
                 .foregroundStyle(.gray)
                 .layoutPriority(0)
-            Text("Copyright © Jozek Hajduk\nAll right reserved")
-                .font(.footnote)
-                .fontWeight(.bold)
-                .foregroundStyle(.gray)
-                .multilineTextAlignment(.center)
-                .layoutPriority(1)
+            //Text("Copyright © Jozek Hajduk\nAll right reserved")
+            //    .font(.footnote)
+            //    .fontWeight(.bold)
+            //    .foregroundStyle(.gray)
+            //    .multilineTextAlignment(.center)
+            //    .layoutPriority(1)
         }
     }
 }

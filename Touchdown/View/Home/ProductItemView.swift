@@ -28,7 +28,7 @@ struct ProductItemView: View {
             Text(product.name)
                 .font(.title3)
                 .fontWeight(.black)
-            Text("$\(product.price)")
+            Text(product.formattedPrice)
                 .fontWeight(.semibold)
                 .foregroundStyle(.gray)
         }
