@@ -8,3 +8,4 @@
 import Foundation
 
 let logoLineal: String = "logo-lineal"
+let logoDark: String = "logo-dark"
