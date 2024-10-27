@@ -25,6 +25,7 @@ struct ContentView: View {
                     CarouselView()
                         .padding(.vertical, 20)
                         .frame(height: 300)
+                    CategoryGridView()
                     FooterView()
                         .padding(.horizontal)
                 }

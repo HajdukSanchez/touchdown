@@ -8,3 +8,4 @@
 import Foundation
 
 let testPlayerCarousel: PlayerCarousel = players[0]
+let testCategory: Category = categories[0]
