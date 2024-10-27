@@ -20,9 +20,16 @@ struct ContentView: View {
                 .padding()
                 .background(.white)
                 .shadow(color: .black.opacity(0.05), radius: 5, x: 0, y: 5)
-            Spacer()
-            FooterView()
-                .padding(.horizontal)
+            ScrollView(.vertical) {
+                VStack(spacing: 0) {
+                    CarouselView()
+                        .padding(.vertical, 20)
+                        .frame(height: 300)
+                    FooterView()
+                        .padding(.horizontal)
+                }
+            }
+            .scrollIndicators(.hidden)
         }
         .background(colorBackground.ignoresSafeArea())
     }
